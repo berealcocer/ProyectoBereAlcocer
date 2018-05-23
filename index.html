@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Proyecto Berenice Alcocer Navarro</title>
+<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/jquery-ui.min.js" type="text/javascript"></script>
+<script src="js/funciones.js" type="text/javascript"></script>
+
+
+</head>
+
+<body>
+
+<div class="titulo">
+Sistemas numéricos y hardware
+</div>
+
+<div class="menu">
+<a class="boton" href="#introduccion">INTRODUCCIÓN</a>
+<a class="boton" href="#contenido">CONTENIDO</a>
+<a class="boton" href="#ejercicio">EJERCICIO</a>
+<a class="boton" href="#referencias">REFERENCIAS</a>
+</div>
+
+
+
+<div class="contenido">
+	
+    <div id="introduccion">
+      
+      <div id="pagina_1">
+      <div class="postura_1"></div>
+      <div class="cuadro_dialogo_1"><span>¡Bienvenidos al Curso Sistemas numéricos y hardware!</span></div>
+      <br style="clear:both"><div class="siguiente" pagina="2"></div>
+      </div>
+      
+      
+      <div id="pagina_2">
+      <div class="cuadro_dialogo_2"><span>En este Curso conocerás la forma en la que se representan y realizan operaciones con datos computaciones, conociendo el sistema binario, ocal y hexadecimal.</span></div>
+      <div class="postura_6"></div>
+      <br style="clear:both;"><div class="anterior" pagina="1"></div><div class="siguiente" pagina="3"></div>
+      </div>
+      
+    
+    </div>
+    
+    
+    <div id="contenido">
+   	  
+      <div id="pagina_3">
+      <p>La representación de datos dentro de la computadora se realiza mediante patrones de bits, sin embargo existen otras notaciones que son utilizadas para facilitar la manipulación de grandes secuencias de bits, estos son los llamados <strong>sistemas numéricos decimal, hexadecimal y octal</strong>. En esta sección conocerás dichos sistemas y la forma de convertir las grandes secuencias de bits a éstos
+  </p>
+      <p>&nbsp;</p>
+      <h3>Sistema binario</h3>
+      
+      <div class="cuadro"><p>El <strong>Sistema Binario</strong> está conformado solamente por dos dígitos: <strong>0 y 1 (bits)</strong>, los cuales representan impulsos eléctricos dentro de la computadora que le indican “apagado” o “encendido, “falso” o “verdadero”. Una computadora sólo puede entender este lenguaje y por eso se le conoce como lenguaje máquina.</p></div>
+      <div class="imagen"><img src="img/f1.png"/><p class="pie_foto">Figura 1. Codificación y el concepto de desarrollo con los iconos<br>(Aksoy, 2018).</p></div>
+      
+      <br style="clear:both;"><div class="anterior" pagina="2"></div><div class="siguiente" pagina="4"></div>
+      </div>
+      
+     <div id="pagina_4">
+	  <div class="postura_3"></div>
+      <div class="cuadro_dialogo_1"><span style="margin-top:140px; font-size:17px;">Haz clic en cada uno de los botones localizados  en la parte izquierda del recurso par que conozcas las características generales del sistema binario.</span></div>
+      <br style="clear:both;"><div class="anterior" pagina="3"></div><div class="siguiente" pagina="5"></div>
+     </div>
+      
+      
+      <div id="pagina_5">
+      <div id="recurso">
+      	<div class="botonera">
+        	<div id="btn_1"><span>Características del sistema binario</span></div>
+            <div id="btn_2"><span>Conversión de binario a decimal</span></div>
+        </div>
+        <div class="informacion">
+          <div id="informacion_btn_1">
+            <p><strong>Características:</strong></p>
+            <ul>
+            <li>Su base es el número <strong>2</strong>. </li>
+            <li>Se compone de 2 elementos que son: <strong>0</strong> y <strong>1</strong>.</li>
+            <li>Un número binario tiene dos elementos importantes, <strong>posición</strong> y <strong>exponente</strong>. Los cuales son explicados con el siguiente ejemplo:</li>
+            <p style="text-align:center;">Se tiene el número binario <strong>01001110</strong>.</p>
+            <li>Posición: lugar que ocupan de derecha a izquierda comenzando por 0.</li>
+            <li>Exponente de base 2: es la posición de cada dígito binario.</li>
+            </ul>
+            <br>
+            <table width="98%"  class="tabla_1">
+ <thead>
+    <tr>
+      <th style="background-color:#fff;">&nbsp;</th>
+      <th>0</th>
+      <th>1</th>
+      <th>0</th>
+      <th>0</th>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+      <th>0</th>
+    </tr>
+    </thead> 
+    <tbody>
+    <tr>
+      <td style="text-align:left;">&nbsp;&nbsp;Posición:</td>
+      <td>7</td>
+      <td>6</td>
+      <td>5</td>
+      <td>4</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td style="text-align:left;">&nbsp;&nbsp;Exponente base 2:</td>
+      <td>2<sup>7</sup></td>
+      <td>2<sup>6</sup></td>
+      <td>2<sup>5</sup></td>
+      <td>2<sup>4</sup></td>
+      <td>2<sup>3</sup></td>
+      <td>2<sup>2</sup></td>
+      <td>2<sup>1</sup></td>
+      <td>2<sup>0</sup></td>
+    </tr>
+  </tbody>
+</table>
+<br><br>
+</div>
+          <div id="informacion_btn_2">
+            <p>Tomando en cuenta la información anterior sobre las posiciones de cada bit, la conversión del sistema binario al decimal se realiza como sigue:</p>
+            <p>Convertir <strong>0101101</strong> a decimal</p>
+            <p>1. Elevar la base 2 a un exponente que sea igual a la posición de cada dígito binario, pero sólo se eleva la potencia de aquellos bits iguales a 1. Los bits iguales a 0, no tomarlos en cuenta.</p> 
+           <table width="98%"  class="tabla_1">
+ <thead>
+    <tr>
+      <th style="background-color:#fff;">&nbsp;</th>
+      <th>0</th>
+      <th>1</th>
+      <th>0</th>
+      <th>1</th>
+      <th>1</th>
+      <th>0</th>
+      <th>1</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="text-align:left;">&nbsp;&nbsp;Posición:</td>
+      <td>6</td>
+      <td>5</td>
+      <td>4</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td style="text-align:left;">&nbsp;&nbsp;Exponente base 2:</td>
+      <td>2<sup>6</sup></td>
+      <td>2<sup>5</sup></td>
+      <td>2<sup>4</sup></td>
+      <td>2<sup>3</sup></td>
+      <td>2<sup>2</sup></td>
+      <td>2<sup>1</sup></td>
+      <td>2<sup>0</sup></td>
+    </tr>
+  
+  <tr>
+      <td style="text-align:left;">&nbsp;&nbsp;Resultado</td>
+      <td>No cuenta</td>
+      <td>32</td>
+      <td>No cuenta</td>
+      <td>8</td>
+      <td>2<sup>2</sup></td>
+      <td>4</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+  
+</table><br>
+<p>2. Sumar todos los resultados de las potencias:</p>
+<p><strong>0101101</strong> = 32 + 8 + 4 + 1 = 45</p>
+<p><strong>0101101</strong> = 45, por lo tanto el número binario 0101101 representa el 45 decimal.</p>
+          </div>
+        </div>
+      </div><!--FIN RECURSO-->
+      <div class="anterior" pagina="4"></div><div class="siguiente" pagina="6"></div>
+      </div>
+      
+   </div>
+
+
+<div id="ejercicio">
+ 
+ <div id="pagina_6">
+  <div class="cuadro_dialogo_2"><span><br>Pon a prueba tus conocimientos.<br><br>Presiona el botón <strong>Iniciar</strong> y haz lo que se te pide.</span></div>
+  <div class="postura_2"></div><br style="clear:both">
+  <div class="importante"><strong style="font-size:14px;">Importante</strong><p>Puedes efectuar el ejercicio las veces que consideres necesarias, ya que te servirá como práctica para la Evidencia de Aprendizaje.</p></div>
+  <div class="btn_iniciar">Iniciar</div>
+  <p><br></p>
+  <!--<div class="anterior" pagina="5"></div><div class="siguiente" pagina="7"></div>-->
+ </div>
+ 
+ <div id="pagina_7"> 
+  <div class="ejercicio">
+    <div id="ejercicio1">
+    <p><strong>&loz; </strong> Selecciona la respuesta y presiona el botón <strong>Enviar</strong>.</p>
+	<p style="padding-left:15px;"><strong>1. </strong>  La conversión del número binario <strong>01100011</strong> a decimal da como resultado:</p>
+    <p style="padding-left:30px;"><input type="radio" name="ejer1" value="0"> 89</p>
+    <p style="padding-left:30px;"><input type="radio" name="ejer1" value="0"> 3</p>
+    <p style="padding-left:30px;"><input type="radio" name="ejer1" value="3"> 99</p>
+    <p style="padding-left:30px;"><input type="radio" name="ejer1" value="0"> 92</p>
+    <p class="retro"></p>
+    <br><div class="btn_enviar" grupo="ejer1" siguiente="ejercicio2">Enviar</div>
+    </div>
+    
+    <div id="ejercicio2">
+    <p><strong>&loz; </strong> Selecciona la respuesta y presiona el botón <strong>Enviar</strong>.</p>
+    <p style="padding-left:15px;"><strong>2. </strong>  La conversión del número binario <strong>11010000</strong> a decimal da como resultado:</p>
+    <p style="padding-left:30px;"><input type="radio" name="ejer2" value="0"> 60</p>
+    <p style="padding-left:30px;"><input type="radio" name="ejer2" value="3"> 208</p>
+    <p style="padding-left:30px;"><input type="radio" name="ejer2" value="0"> 80</p>
+    <p style="padding-left:30px;"><input type="radio" name="ejer2" value="0"> 70</p>
+    <p class="retro"></p>
+    <br>
+    <div class="btn_enviar" grupo="ejer2" siguiente="ejercicio3">Enviar</div>
+    </div>
+    
+    <div id="ejercicio3">
+    <p><strong>&loz; </strong> Selecciona la respuesta y presiona el botón <strong>Enviar</strong>.</p>
+    <p><strong>3. </strong>  Completa el siguiente planteamiento, para lo cual deberás arrastrar el resultado correcto:</p>
+    <p>El resultado de la suma 712A<sub>16</sub> + 9E01<sub>16</sub></p>
+    <p><br></p>
+    <div class="dragable" id="dg_2" style="border:1px dashed #72aabd; width:100px; cursor:pointer; text-align:center"><p>100101</p></div><br>
+    <div class="dragable" id="dg_1" style="border:1px dashed #72aabd; width:100px; cursor:pointer; text-align:center"><p>10F2B<sub>16</sub></p></div>
+    <p><br></p>
+    <img src="utileria/drag.png" id="dropzone"/>
+    
+    <p class="retro"></p>
+    <br><div class="btn_enviar_2">Enviar</div>
+    <!--<br style="clear:both;"><div class="anterior" pagina="6"></div><div class="siguiente" pagina="8"></div>-->
+
+    </div>
+  </div>
+  
+ </div> 
+ 
+ <div id="pagina_8">
+  <div class="postura_5"><div id="calificacion"></div></div>
+  <!--<div class="btn_revisar">Revisar  el ejercicio</div>
+  <div class="btn_leccion">Volver a realizar la Lección</div>
+  <div class="btn_salir">Salir</div>-->
+   <br style="clear:both;">&nbsp;<div class="siguiente" pagina="9"></div>
+</div>
+</div>
+
+
+  <div id="referencias">
+  <div id="pagina_9">
+   <p>Aksoy, E. (2018). <em>Codificación y el concepto de desarrollo con los iconos</em>. Recuperado de https://www.istockphoto.com/mx/vector/codificaci%C3%B3n-y-el-concepto-de-desarrollo-con-los-iconos-gm644249834-116830703 (imagen publicada bajo licencia estándar, de acuerdo a
+http://www.istockphoto.com/es/legal/license-agreement).</p>
+<br>
+  <br style="clear:both;">&nbsp;&nbsp;&nbsp;<div class="anterior" pagina="8"></div>
+  </div>
+  </div>
+  
+</div>
+
+</body>
+</html>
